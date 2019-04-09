@@ -6,6 +6,7 @@ from django.views.generic import (
 from .models import Post
 
 
+
 def home(request):
     context = {
         'posts': Post.objects.all(),
@@ -73,3 +74,6 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 def about(request):
     return render(request, 'blog/about.html')
+
+def view_404(request, *args, **kwargs):
+    return redirect('blog-home')
