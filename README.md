@@ -9,4 +9,4 @@ Main features of project:
 - Image upload to Amazon Simple Storage Service 
 - Frontend with usage of Bootstrap4
   
-## Visit website here: www.itattooz.pl
+## Visit website here: https://blogappdjango.herokuapp.com/
